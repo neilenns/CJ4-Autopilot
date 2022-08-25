@@ -1,0 +1,4 @@
+(sym_lib_table
+  (lib (name "CJ4-Autopilot")(type "KiCad")(uri "${KIPRJMOD}/CJ4-Autopilot.kicad_sym")(options "")(descr ""))
+  (lib (name "promicro")(type "Legacy")(uri "${KIPRJMOD}/promicro.lib")(options "")(descr ""))
+)
