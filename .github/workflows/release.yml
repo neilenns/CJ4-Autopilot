@@ -109,7 +109,7 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
           files: |
-            PDFs/${{ github.event.repository.name }}-schematic.pdf
+            ${{ env.OutputFolder }}/PDFs/${{ github.event.repository.name }}-schematic.pdf
             ${{ github.event.repository.name }}-Documentation.zip
             ${{ github.event.repository.name }}-JLCPCB.zip
             ${{ env.OutputFolder }}/PCBWay/${{ github.event.repository.name }}-PCBWay.zip
