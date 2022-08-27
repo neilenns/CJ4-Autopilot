@@ -328,6 +328,10 @@
     [
       "e5a8c00e-6f12-4d69-b09f-e37fa61514c3",
       "Input shifter1"
+    ],
+    [
+      "b76342d5-1e15-4862-b1f2-61ba5d5402c4",
+      "RP2040"
     ]
   ],
   "text_variables": {}
