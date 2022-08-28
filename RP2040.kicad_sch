@@ -1859,6 +1859,11 @@
     (effects (font (size 1.27 1.27)) (justify left bottom))
     (uuid 3a20fcf2-faab-43bb-8d09-6520700ba775)
   )
+  (text "If there are stability issues then R4 may need to be replaced\nwith a smaller value resistor. See \nhttps://forums.raspberrypi.com/viewtopic.php?t=336663 for more details."
+    (at 13.97 139.7 0)
+    (effects (font (size 1.27 1.27)) (justify left bottom))
+    (uuid 49502ef1-13cd-4ac8-b71f-055cab72735c)
+  )
   (text "Make sure C8 is close to pin 45 of RP2040" (at 102.87 43.18 0)
     (effects (font (size 1.27 1.27)) (justify left bottom))
     (uuid 7816bf3c-78ac-4d86-8419-8f9745c22f9d)
