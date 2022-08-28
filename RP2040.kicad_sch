@@ -2291,7 +2291,7 @@
     (uuid 3da426a9-d467-44e7-9a0d-d28f5f22ddf8)
     (property "Reference" "U2" (id 0) (at 64.77 18.6182 0))
     (property "Value" "AMS1117-3.3" (id 1) (at 64.77 20.9296 0))
-    (property "Footprint" "CJ4-Autopilot:SOT-223-4NC" (id 2) (at 64.77 19.685 0)
+    (property "Footprint" "Package_TO_SOT_SMD:SOT-223-3_TabPin2" (id 2) (at 64.77 19.685 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "http://www.onsemi.com/pub_link/Collateral/NCP1117-D.PDF" (id 3) (at 67.31 31.115 0)
