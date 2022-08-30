@@ -6,8 +6,8 @@
 
   (paper "USLegal")
   (title_block
-    (date "2022-08-26")
-    (rev "@version@")
+    (date "2022-08-30")
+    (rev "")
     (comment 1 "neile@live.com")
     (comment 2 "Neil Enns")
   )

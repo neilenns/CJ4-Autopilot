@@ -114,6 +114,8 @@ outputs:
       - F.Mask
       - B.Mask
       - Edge.Cuts
+      - F.Paste
+      - B.Paste
 
   - name: JLCPCB_drill
     comment: Drill - JLCPCB
