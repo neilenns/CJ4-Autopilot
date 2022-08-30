@@ -7,7 +7,7 @@
   (title_block
     (title "CJ4 Autopilot Panel")
     (date "2022-08-30")
-    (rev "")
+    (rev "@version@")
     (comment 1 "neile@live.com")
     (comment 2 "Neil Enns")
   )

@@ -7,7 +7,7 @@
   (title_block
     (title "CJ4 Autopilot Panel")
     (date "2022-08-30")
-    (rev "")
+    (rev "@version@")
     (comment 1 "neile@live.com")
     (comment 2 "Neil Enns")
   )
@@ -841,9 +841,9 @@
   )
 
   (no_connect (at 91.44 182.245) (uuid 0ba0bc3d-dfc9-419d-9f48-17b1b7a96653))
-  (no_connect (at 91.44 184.785) (uuid 0ba0bc3d-dfc9-419d-9f48-17b1b7a96653))
-  (no_connect (at 55.245 187.325) (uuid 0ba0bc3d-dfc9-419d-9f48-17b1b7a96653))
-  (no_connect (at 55.245 184.785) (uuid 0ba0bc3d-dfc9-419d-9f48-17b1b7a96653))
+  (no_connect (at 91.44 184.785) (uuid 0ba0bc3d-dfc9-419d-9f48-17b1b7a96654))
+  (no_connect (at 55.245 187.325) (uuid 0ba0bc3d-dfc9-419d-9f48-17b1b7a96655))
+  (no_connect (at 55.245 184.785) (uuid 0ba0bc3d-dfc9-419d-9f48-17b1b7a96656))
   (no_connect (at 55.245 177.165) (uuid 408d6bc1-7fdd-4ddf-a48b-aac84e000640))
   (no_connect (at 57.785 160.655) (uuid 4c2574e1-da0a-46ca-aead-8cce589fd322))
   (no_connect (at 137.16 74.93) (uuid 50ed7e9c-c245-4ab1-9cd2-a6ae075dd81d))
