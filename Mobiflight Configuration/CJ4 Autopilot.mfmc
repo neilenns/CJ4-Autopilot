@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <ModuleName>CJ4 Autopilot</ModuleName>
+  <PowerSavingTime>600</PowerSavingTime>
+  <InputShiftRegister Name="Buttons" LatchPin="3" ClockPin="4" DataPin="2" NumModules="2" />
+  <ShiftRegister Name="Lights" LatchPin="8" ClockPin="7" DataPin="6" NumModules="2" />
+  <Output Name="Brightness" Pin="5" />
+  <Encoder Name="CRS2_ENC" PinLeft="11" PinRight="10" EncoderType="1" />
+  <Button Name="CRS2_BTN" Pin="9" />
+  <Encoder Name="ALT_ENC" PinLeft="14" PinRight="13" EncoderType="1" />
+  <Button Name="ALT_BTN" Pin="12" />
+  <Encoder Name="HDG_ENC" PinLeft="17" PinRight="16" EncoderType="1" />
+  <Button Name="HDG_BTN" Pin="15" />
+  <Encoder Name="FLC_ENC" PinLeft="20" PinRight="19" EncoderType="1" />
+  <Button Name="FLC_BTN" Pin="18" />
+  <Encoder Name="CRS1_ENC" PinLeft="23" PinRight="22" EncoderType="1" />
+  <Button Name="CRS1_BTN" Pin="21" />
+  <Button Name="VNAV" Pin="24" />
+  <Encoder Name="VS_ENC" PinLeft="25" PinRight="26" EncoderType="1" />
+  <Button Name="VS" Pin="27" />
+  <Button Name="FD1" Pin="28" />
+  <Button Name="FLC" Pin="29" />
+</Config>
