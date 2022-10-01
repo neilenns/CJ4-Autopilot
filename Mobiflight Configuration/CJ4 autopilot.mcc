@@ -4,28 +4,28 @@
     <config guid="21e6658d-3838-4d18-94fc-048752a5d889">
       <active>true</active>
       <description>Autopilot - Backlight</description>
-      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.4.0.3, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
-        <source type="SimConnect" VarType="CODE" Value="(L:LIGHTING_Knob_Master) 0 !=" UUID="5a3b1b96-5aaf-40f9-a1a3-62f19108b41a" />
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.5.0.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="Variable" varType="number" varName="Backlight" varExpression="$" />
         <comparison active="False" value="" operand="" ifValue="" elseValue="" />
-        <display type="ShiftRegister" serial="CJ4 Autopilot/ SN-9a4-828" trigger="normal" shiftRegister="Lights" registerOutputPin="Output 0|Output 1|Output 2|Output 3|Output 4|Output 5|Output 6|Output 8|Output 9|Output 10|Output 11|Output 12|Output 13|Output 14" />
+        <display type="ShiftRegister" serial="CJ4 Autopilot/ SN-99b-d21" trigger="normal" shiftRegister="Lights" registerOutputPin="Output 0|Output 1|Output 2|Output 3|Output 4|Output 5|Output 6|Output 7|Output 8|Output 9|Output 10|Output 11|Output 12|Output 13|Output 14|Output 15" />
         <preconditions />
-        <transformation active="False" expression="$" substrStart="0" substrEnd="7" />
+        <transformation active="True" expression="1" substrStart="0" substrEnd="7" />
         <configrefs />
       </settings>
     </config>
     <config guid="8b0e915e-cd0e-4997-8410-8be87ab44cc8">
       <active>true</active>
       <description>Autopilot - Backlight brightness</description>
-      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.4.0.3, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.5.0.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
         <source type="SimConnect" VarType="CODE" Value="(A:CIRCUIT GENERAL PANEL ON,Bool) if{ (L:LIGHTING_Knob_Master) } els{ 0 }" UUID="0" />
         <comparison active="False" value="" operand="" ifValue="" elseValue="" />
-        <display type="Pin" serial="CJ4 Autopilot/ SN-9a4-828" trigger="normal" pin="Brightness" pinBrightness="255" pinPwm="True" />
-        <interpolation active="True">
+        <display type="Pin" serial="CJ4 Autopilot/ SN-99b-d21" trigger="normal" pin="Brightness" pinBrightness="255" pinPwm="True" />
+        <interpolation active="False">
           <value x="0" y="0" />
           <value x="100" y="255" />
         </interpolation>
         <preconditions />
-        <transformation active="False" expression="$" substrStart="0" substrEnd="7" />
+        <transformation active="True" expression="250" substrStart="0" substrEnd="7" />
         <configrefs />
       </settings>
     </config>
@@ -34,7 +34,7 @@
     <config guid="5f8fa8b9-74a0-44be-9351-02eefb49588d">
       <active>true</active>
       <description>Autopilot - HDG</description>
-      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.4.0.3, Culture=neutral, PublicKeyToken=null" serial="CJ4 Autopilot/ SN-9a4-828" name="Buttons" type="InputShiftRegister" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.5.0.0, Culture=neutral, PublicKeyToken=null" serial="CJ4 Autopilot/ SN-99b-d21" name="Buttons" type="InputShiftRegister" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
         <inputShiftRegister ExtPin="9">
           <onPress type="MSFS2020CustomInputAction" command="(&gt;H:WT_CJ4_AP_HDG_PRESSED)" presetId="a4e1f42f-d6d6-4f64-95cb-a67c3b05df1a" />
           <onRelease />
@@ -46,7 +46,7 @@
     <config guid="06a1c21f-d303-4daf-9c8d-f54fecc95f00">
       <active>true</active>
       <description>Autopilot - YD</description>
-      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.4.0.3, Culture=neutral, PublicKeyToken=null" serial="CJ4 Autopilot/ SN-9a4-828" name="Buttons" type="InputShiftRegister" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.5.0.0, Culture=neutral, PublicKeyToken=null" serial="CJ4 Autopilot/ SN-99b-d21" name="Buttons" type="InputShiftRegister" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
         <inputShiftRegister ExtPin="1">
           <onPress type="MSFS2020CustomInputAction" command="(&gt;K:YAW_DAMPER_TOGGLE)" presetId="9b917153-397d-4ac6-ada0-f5b2067d119e" />
           <onRelease />
@@ -58,7 +58,7 @@
     <config guid="02f854ea-ac29-4aa8-8fb1-b425fdf9cea5">
       <active>true</active>
       <description>Autopilot - FD1</description>
-      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.4.0.3, Culture=neutral, PublicKeyToken=null" serial="CJ4 Autopilot/ SN-9a4-828" name="FD1" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.5.0.0, Culture=neutral, PublicKeyToken=null" serial="CJ4 Autopilot/ SN-99b-d21" name="FD1" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
         <button>
           <onPress type="MSFS2020CustomInputAction" command="1 (&gt;K:TOGGLE_FLIGHT_DIRECTOR)" presetId="42cb18cb-7216-4286-9628-1a4bf1203825" />
           <onRelease />
@@ -70,7 +70,7 @@
     <config guid="14cf2ff6-d22e-401a-944f-9c3c06cc076f">
       <active>true</active>
       <description>Autopilot - FD2</description>
-      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.4.0.3, Culture=neutral, PublicKeyToken=null" serial="CJ4 Autopilot/ SN-9a4-828" name="Buttons" type="InputShiftRegister" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.5.0.0, Culture=neutral, PublicKeyToken=null" serial="CJ4 Autopilot/ SN-99b-d21" name="Buttons" type="InputShiftRegister" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
         <inputShiftRegister ExtPin="3">
           <onPress type="MSFS2020CustomInputAction" command="2 (&gt;K:TOGGLE_FLIGHT_DIRECTOR)" presetId="42cb18cb-7216-4286-9628-1a4bf1203825" />
           <onRelease />
@@ -82,7 +82,7 @@
     <config guid="3df16b35-5a2f-4528-b22b-9ce6bd7df7ea">
       <active>true</active>
       <description>Autopilot - NAV</description>
-      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.4.0.3, Culture=neutral, PublicKeyToken=null" serial="CJ4 Autopilot/ SN-9a4-828" name="Buttons" type="InputShiftRegister" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.5.0.0, Culture=neutral, PublicKeyToken=null" serial="CJ4 Autopilot/ SN-99b-d21" name="Buttons" type="InputShiftRegister" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
         <inputShiftRegister ExtPin="8">
           <onPress type="MSFS2020CustomInputAction" command="(&gt;H:WT_CJ4_AP_NAV_PRESSED)" presetId="9674069c-b7e6-446e-a674-e4276a4bbde6" />
           <onRelease />
@@ -94,7 +94,7 @@
     <config guid="ef0392ec-1dcd-4cfe-8579-465854e33b76">
       <active>true</active>
       <description>Autopilot - APPR</description>
-      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.4.0.3, Culture=neutral, PublicKeyToken=null" serial="CJ4 Autopilot/ SN-9a4-828" name="Buttons" type="InputShiftRegister" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.5.0.0, Culture=neutral, PublicKeyToken=null" serial="CJ4 Autopilot/ SN-99b-d21" name="Buttons" type="InputShiftRegister" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
         <inputShiftRegister ExtPin="11">
           <onPress type="MSFS2020CustomInputAction" command="(&gt;H:WT_CJ4_AP_APPR_PRESSED)" presetId="fcc075a2-757b-4824-ad95-e205c162fc6c" />
           <onRelease />
@@ -106,7 +106,7 @@
     <config guid="01e98699-7eaf-4624-a095-d029f5a33250">
       <active>true</active>
       <description>Autopilot - VNAV</description>
-      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.4.0.3, Culture=neutral, PublicKeyToken=null" serial="CJ4 Autopilot/ SN-9a4-828" name="VNAV" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.5.0.0, Culture=neutral, PublicKeyToken=null" serial="CJ4 Autopilot/ SN-99b-d21" name="VNAV" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
         <button>
           <onPress type="MSFS2020CustomInputAction" command="(&gt;H:WT_CJ4_AP_VNAV_PRESSED)" presetId="cc7dee1e-1b66-4c6a-a62b-18883332827f" />
           <onRelease />
@@ -118,7 +118,7 @@
     <config guid="14a1b3bd-f6fd-4f01-9d34-c6971414b354">
       <active>true</active>
       <description>Autopilot - ALT</description>
-      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.4.0.3, Culture=neutral, PublicKeyToken=null" serial="CJ4 Autopilot/ SN-9a4-828" name="Buttons" type="InputShiftRegister" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.5.0.0, Culture=neutral, PublicKeyToken=null" serial="CJ4 Autopilot/ SN-99b-d21" name="Buttons" type="InputShiftRegister" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
         <inputShiftRegister ExtPin="2">
           <onPress type="MSFS2020CustomInputAction" command="(&gt;H:WT_CJ4_AP_ALT_PRESSED)" presetId="66ae15fb-66f6-4660-8be1-78d32991f745" />
           <onRelease />
@@ -130,7 +130,7 @@
     <config guid="bf44fc2e-295a-4e30-882f-aff62bd4a1e9">
       <active>true</active>
       <description>Autopilot - VS</description>
-      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.4.0.3, Culture=neutral, PublicKeyToken=null" serial="CJ4 Autopilot/ SN-9a4-828" name="VS" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.5.0.0, Culture=neutral, PublicKeyToken=null" serial="CJ4 Autopilot/ SN-99b-d21" name="VS" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
         <button>
           <onPress type="MSFS2020CustomInputAction" command="(&gt;H:WT_CJ4_AP_VS_PRESSED)" presetId="7acdd720-d157-435b-b708-791c224bf0a0" />
           <onRelease />
@@ -142,7 +142,7 @@
     <config guid="7d8181c8-b034-441f-b3be-09f115f20c02">
       <active>true</active>
       <description>Autopilot - FLC</description>
-      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.4.0.3, Culture=neutral, PublicKeyToken=null" serial="CJ4 Autopilot/ SN-9a4-828" name="FLC" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.5.0.0, Culture=neutral, PublicKeyToken=null" serial="CJ4 Autopilot/ SN-99b-d21" name="FLC" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
         <button>
           <onPress type="MSFS2020CustomInputAction" command="(&gt;H:WT_CJ4_AP_FLC_PRESSED)" presetId="0" />
           <onRelease />
@@ -154,7 +154,7 @@
     <config guid="7d0d0e71-a75e-47b9-8dbd-03a34754bda4">
       <active>true</active>
       <description>Autopilot - ALT set</description>
-      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.4.0.3, Culture=neutral, PublicKeyToken=null" serial="CJ4 Autopilot/ SN-9a4-828" name="ALT_ENC" type="Encoder" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.5.0.0, Culture=neutral, PublicKeyToken=null" serial="CJ4 Autopilot/ SN-99b-d21" name="ALT_ENC" type="Encoder" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
         <encoder>
           <onLeft type="MSFS2020CustomInputAction" command="100 (&gt;K:AP_ALT_VAR_DEC)" presetId="9d1a2e81-4620-462c-819b-6f8ce91cc766" />
           <onLeftFast type="MSFS2020CustomInputAction" command="1000 (&gt;K:AP_ALT_VAR_DEC)" presetId="bd8bf317-04dc-4bd3-835c-de62829704e5" />
@@ -171,7 +171,7 @@
     <config guid="dec14ee1-ee55-4f1d-9180-1a0a32c0d36d">
       <active>true</active>
       <description>Autopilot - VS set</description>
-      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.4.0.3, Culture=neutral, PublicKeyToken=null" serial="CJ4 Autopilot/ SN-9a4-828" name="VS_ENC" type="Encoder" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.5.0.0, Culture=neutral, PublicKeyToken=null" serial="CJ4 Autopilot/ SN-99b-d21" name="VS_ENC" type="Encoder" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
         <encoder>
           <onLeft type="MSFS2020CustomInputAction" command="(A:AUTOPILOT VERTICAL HOLD, bool) if{ (&gt;K:AP_VS_VAR_DEC) }&#xA;    els{ (&gt;K:AP_PITCH_REF_INC_DN) }" presetId="72b026ac-3c4c-4db8-99e6-0b64308fd0e3" />
           <onLeftFast />
@@ -187,7 +187,7 @@
     <config guid="c6be6d6e-2770-4bb4-a752-256355190bbd">
       <active>true</active>
       <description>Autopilot - HDG set</description>
-      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.4.0.3, Culture=neutral, PublicKeyToken=null" serial="CJ4 Autopilot/ SN-9a4-828" name="HDG_ENC" type="Encoder" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.5.0.0, Culture=neutral, PublicKeyToken=null" serial="CJ4 Autopilot/ SN-99b-d21" name="HDG_ENC" type="Encoder" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
         <encoder>
           <onLeft type="MSFS2020CustomInputAction" command="1 (&gt;K:HEADING_BUG_DEC)" presetId="16f19725-46b6-4a67-939e-2626d7b0b736" />
           <onLeftFast type="MSFS2020CustomInputAction" command="(A:AUTOPILOT HEADING LOCK DIR:1, Degrees) 5 - dnor (&gt;K:1:HEADING_BUG_SET)" presetId="dd96a3be-bb43-4bc2-ac77-838c2a53db3b" />
@@ -204,7 +204,7 @@
     <config guid="b04f3e00-49da-4246-afce-282d5e9fbe9e">
       <active>true</active>
       <description>Autopilot - HDG sync</description>
-      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.4.0.3, Culture=neutral, PublicKeyToken=null" serial="CJ4 Autopilot/ SN-9a4-828" name="HDG_BTN" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.5.0.0, Culture=neutral, PublicKeyToken=null" serial="CJ4 Autopilot/ SN-99b-d21" name="HDG_BTN" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
         <button>
           <onPress type="MSFS2020CustomInputAction" command="(A:HEADING INDICATOR, degrees) (&gt;K:HEADING_BUG_SET)" presetId="48cf9fc6-d1a0-4c72-9119-fd28e331c962" />
           <onRelease />
@@ -219,7 +219,7 @@
     <config guid="51e321c0-2854-427b-9061-1ee34ff8ce2f">
       <active>true</active>
       <description>Autopilot - CRS1 set</description>
-      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.4.0.3, Culture=neutral, PublicKeyToken=null" serial="CJ4 Autopilot/ SN-9a4-828" name="CRS1_ENC" type="Encoder" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.5.0.0, Culture=neutral, PublicKeyToken=null" serial="CJ4 Autopilot/ SN-99b-d21" name="CRS1_ENC" type="Encoder" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
         <encoder>
           <onLeft type="MSFS2020CustomInputAction" command="(L:WT_CJ4_LNAV_MODE, Number) 2 == if{ &#xA;(A:NAV OBS:2, degree) 1 - dnor (&gt;K:VOR2_SET) } &#xA;   els{ (A:NAV OBS:1, degree) 1 - dnor (&gt;K:VOR1_SET) }" presetId="4d07ca66-1702-4a16-b361-7de810c2277a" />
           <onLeftFast />
@@ -236,7 +236,7 @@
     <config guid="7e35d6c5-9fd4-4c41-af40-bec126cf9490">
       <active>true</active>
       <description>Autopilot - CRS2 set</description>
-      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.4.0.3, Culture=neutral, PublicKeyToken=null" serial="CJ4 Autopilot/ SN-9a4-828" name="CRS2_ENC" type="Encoder" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.5.0.0, Culture=neutral, PublicKeyToken=null" serial="CJ4 Autopilot/ SN-99b-d21" name="CRS2_ENC" type="Encoder" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
         <encoder>
           <onLeft type="MSFS2020CustomInputAction" command="(L:WT_CJ4_LNAV_MODE, Number) 2 == if{ &#xA;(A:NAV OBS:2, degree) 1 - dnor (&gt;K:VOR2_SET) } &#xA;   els{ (A:NAV OBS:1, degree) 1 - dnor (&gt;K:VOR1_SET) }" presetId="4d07ca66-1702-4a16-b361-7de810c2277a" />
           <onLeftFast />
@@ -253,7 +253,7 @@
     <config guid="5294f8e6-df22-4cc9-b07f-add115bd1100">
       <active>true</active>
       <description>Autopilot - SPEED set</description>
-      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.4.0.3, Culture=neutral, PublicKeyToken=null" serial="CJ4 Autopilot/ SN-9a4-828" name="FLC_ENC" type="Encoder" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.5.0.0, Culture=neutral, PublicKeyToken=null" serial="CJ4 Autopilot/ SN-99b-d21" name="FLC_ENC" type="Encoder" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
         <encoder>
           <onLeft type="MSFS2020CustomInputAction" command="(L:XMLVar_AirspeedIsInMach, Bool) if{ (&gt;K:AP_MACH_VAR_DEC) }&#xA;    els{ (&gt;K:AP_SPD_VAR_DEC) }" presetId="7ed6bdb2-0631-4b94-bdf6-a8b44e5e88c1" />
           <onLeftFast type="MSFS2020CustomInputAction" command="(L:XMLVAR_AirSpeedIsInMach) if{ (&gt;K:AP_MACH_VAR_DEC) } els{ (A:AUTOPILOT AIRSPEED HOLD VAR, knot) 10 - 10 / near 10 * 0 max (&gt;K:AP_SPD_VAR_SET) }" presetId="ebbbbdba-b078-4dc9-8006-9ccbe96fe4ec" />
@@ -270,7 +270,7 @@
     <config guid="394f31cd-54d2-446d-8eae-32b4befcdab3">
       <active>true</active>
       <description>Autopilot - SPEED ias/mach</description>
-      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.4.0.3, Culture=neutral, PublicKeyToken=null" serial="CJ4 Autopilot/ SN-9a4-828" name="FLC_BTN" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.5.0.0, Culture=neutral, PublicKeyToken=null" serial="CJ4 Autopilot/ SN-99b-d21" name="FLC_BTN" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
         <button>
           <onPress type="MSFS2020CustomInputAction" command="(L:XMLVAR_AirSpeedIsInMach, Bool) ! (&gt;L:XMLVAR_AirSpeedIsInMach, Bool)" presetId="cc4270cd-361c-4c7f-bdeb-2b3428115dcd" />
           <onRelease />
@@ -285,7 +285,7 @@
     <config guid="5882f82e-a350-4cc6-8d21-e8b8c3afefa9">
       <active>true</active>
       <description>Autopilot - CRS1 pressed</description>
-      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.4.0.3, Culture=neutral, PublicKeyToken=null" serial="CJ4 Autopilot/ SN-9a4-828" name="CRS1_BTN" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.5.0.0, Culture=neutral, PublicKeyToken=null" serial="CJ4 Autopilot/ SN-99b-d21" name="CRS1_BTN" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
         <button>
           <onPress type="MSFS2020CustomInputAction" command="(A:HEADING INDICATOR, degrees) sp0 &#xA;(L:WT_CJ4_LNAV_MODE, Number) 2 == if{ l0 (&gt;K:VOR2_SET) } &#xA;   els{ l0 (&gt;K:VOR1_SET) }" presetId="ee835906-168b-4827-87a2-c6e9a492bba4" />
           <onRelease />
@@ -297,7 +297,7 @@
     <config guid="a7f03775-4491-4611-9eb1-0597df5dd0f8">
       <active>true</active>
       <description>Autopilot - CRS2 pressed</description>
-      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.4.0.3, Culture=neutral, PublicKeyToken=null" serial="CJ4 Autopilot/ SN-9a4-828" name="CRS2_BTN" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.5.0.0, Culture=neutral, PublicKeyToken=null" serial="CJ4 Autopilot/ SN-99b-d21" name="CRS2_BTN" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
         <button>
           <onPress type="MSFS2020CustomInputAction" command="0 (A:HEADING INDICATOR, degrees) sp0 (L:WT_CJ4_LNAV_MODE, Number) 2 == if{ &#xA;  l0 (&gt;K:VOR2_SET) &#xA;} els{ &#xA;  l0 (&gt;K:VOR1_SET) &#xA;}" presetId="a51f32d5-c208-41d7-9d0d-5bb0c1f16069" />
           <onRelease />
@@ -309,7 +309,7 @@
     <config guid="fb404ef1-ef2a-425a-9e09-2f3bab6bdbb7">
       <active>true</active>
       <description>Autopilot - HALF BANK pressed</description>
-      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.4.0.3, Culture=neutral, PublicKeyToken=null" serial="CJ4 Autopilot/ SN-9a4-828" name="Buttons" type="InputShiftRegister" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.5.0.0, Culture=neutral, PublicKeyToken=null" serial="CJ4 Autopilot/ SN-99b-d21" name="Buttons" type="InputShiftRegister" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
         <inputShiftRegister ExtPin="15">
           <onPress type="MSFS2020CustomInputAction" command="(A:AUTOPILOT MAX BANK, degrees) 16 &lt; if{ (&gt;K:AP_MAX_BANK_INC) } els{ (&gt;K:AP_MAX_BANK_DEC) }" presetId="5eca610d-d7a1-4e92-ae5a-1e2fef431030" />
           <onRelease />
@@ -321,7 +321,7 @@
     <config guid="7ad553bc-be71-4de7-98b3-8cd2bb4b48ca">
       <active>true</active>
       <description>Autopilot - BC</description>
-      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.4.0.3, Culture=neutral, PublicKeyToken=null" serial="CJ4 Autopilot/ SN-9a4-828" name="Buttons" type="InputShiftRegister" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.5.0.0, Culture=neutral, PublicKeyToken=null" serial="CJ4 Autopilot/ SN-99b-d21" name="Buttons" type="InputShiftRegister" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
         <inputShiftRegister ExtPin="12">
           <onPress type="MSFS2020CustomInputAction" command="(&gt;H:WT_CJ4_AP_BC_PRESSED)" presetId="c8f78459-77f6-403f-875b-66de2dd86f2c" />
           <onRelease />
@@ -333,7 +333,7 @@
     <config guid="876f257d-1784-47bc-aa5e-be3263bf2cad">
       <active>true</active>
       <description>Autopilot - AP</description>
-      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.4.0.3, Culture=neutral, PublicKeyToken=null" serial="CJ4 Autopilot/ SN-9a4-828" name="Buttons" type="InputShiftRegister" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.5.0.0, Culture=neutral, PublicKeyToken=null" serial="CJ4 Autopilot/ SN-99b-d21" name="Buttons" type="InputShiftRegister" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
         <inputShiftRegister ExtPin="0">
           <onPress type="MSFS2020CustomInputAction" command="(&gt;K:AP_MASTER)" presetId="b17146c8-2db3-4239-b797-e7bc11d557da" />
           <onRelease />
@@ -345,7 +345,7 @@
     <config guid="99eca82a-81ce-43cd-a98b-cbb76bebe93d">
       <active>false</active>
       <description>Autopilot - DISC</description>
-      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.4.0.3, Culture=neutral, PublicKeyToken=null" serial="CJ4 Autopilot/ SN-9a4-828" name="Buttons" type="InputShiftRegister" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.5.0.0, Culture=neutral, PublicKeyToken=null" serial="CJ4 Autopilot/ SN-99b-d21" name="Buttons" type="InputShiftRegister" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
         <inputShiftRegister ExtPin="6">
           <onPress type="MSFS2020CustomInputAction" command="(A:AUTOPILOT DISENGAGED, Bool) if{ 0 (&gt;K:AUTOPILOT_DISENGAGE_SET) } els{ 1 (&gt;K:AUTOPILOT_DISENGAGE_SET) }" presetId="4b44039d-dd8a-4c67-9512-0d335bb49f0a" />
           <onRelease />

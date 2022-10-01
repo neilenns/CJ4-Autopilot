@@ -260,6 +260,11 @@
     (fp_arc (start -1.524 6.095999) (mid -0.032056 -6.28353) (end 1.586121 6.080132) (layer "F.CrtYd") (width 0.05) (tstamp cc61dbe4-3c5e-4e41-bfd1-5b24764ebe2d))
     (pad "" np_thru_hole circle (at 0 0) (size 7.5 7.5) (drill 7.5) (layers *.Mask) (tstamp 2697210d-9785-447e-921a-ea41effd7a7e))
     (pad "" np_thru_hole oval (at 0 6 90) (size 1 2.2) (drill oval 0.9 2.1) (layers *.Mask) (tstamp d75bd475-adc5-43b9-9d2d-18286fdbc859))
+    (model "${KIPRJMOD}/3D Models/EN11-HSM1BF20--3DModel-STEP-412949.STEP"
+      (offset (xyz 0 0 -2))
+      (scale (xyz 1 1 1))
+      (rotate (xyz -90 0 0))
+    )
   )
 
   (footprint "CJ4-Autopilot:SW_PUSH_6mm" (layer "F.Cu")
@@ -655,6 +660,11 @@
     (fp_arc (start -1.524 6.095999) (mid -0.032056 -6.28353) (end 1.586121 6.080132) (layer "F.CrtYd") (width 0.05) (tstamp 98e399bd-8423-4d7e-bc40-1b9f6f0271f5))
     (pad "" np_thru_hole circle (at 0 0) (size 7.5 7.5) (drill 7.5) (layers *.Mask) (tstamp 6d9e09a3-e908-40dc-8680-56ab7984c64f))
     (pad "" np_thru_hole oval (at 0 6 90) (size 1 2.2) (drill oval 0.9 2.1) (layers *.Mask) (tstamp e05ab311-16ee-4afe-afba-54842d71dc7d))
+    (model "${KIPRJMOD}/3D Models/EN11-HSM1BF20--3DModel-STEP-412949.STEP"
+      (offset (xyz 0 0 -2))
+      (scale (xyz 1 1 1))
+      (rotate (xyz -90 0 0))
+    )
   )
 
   (footprint "CJ4-Autopilot:SW_PUSH_6mm" (layer "F.Cu")
@@ -749,6 +759,11 @@
     (fp_arc (start -1.524 6.095999) (mid -0.032056 -6.28353) (end 1.586121 6.080132) (layer "F.CrtYd") (width 0.05) (tstamp 92156ceb-a852-4c1e-938e-14749c692fbb))
     (pad "" np_thru_hole oval (at 0 6 90) (size 1 2.2) (drill oval 0.9 2.1) (layers *.Mask) (tstamp 7bbf59b8-b5e5-4c4e-ae30-6fe5e7c60c7e))
     (pad "" np_thru_hole circle (at 0 0) (size 7.5 7.5) (drill 7.5) (layers *.Mask) (tstamp cd0c9c20-e15d-4fe8-86ae-a7aa89b66ad5))
+    (model "${KIPRJMOD}/3D Models/EN11-HSM1BF20--3DModel-STEP-412949.STEP"
+      (offset (xyz 0 0 -2))
+      (scale (xyz 1 1 1))
+      (rotate (xyz -90 0 0))
+    )
   )
 
   (footprint "MountingHole:MountingHole_3.2mm_M3" (layer "F.Cu")
@@ -1049,6 +1064,11 @@
     (fp_arc (start -1.524 6.095999) (mid -0.032056 -6.28353) (end 1.586121 6.080132) (layer "F.CrtYd") (width 0.05) (tstamp ec648ad6-fb24-4beb-9a26-6b2c04288ce2))
     (pad "" np_thru_hole circle (at 0 0) (size 7.5 7.5) (drill 7.5) (layers *.Mask) (tstamp 315599bf-7866-42f5-92b5-93d8f9b8af31))
     (pad "" np_thru_hole oval (at 0 6 90) (size 1 2.2) (drill oval 0.9 2.1) (layers *.Mask) (tstamp 656d5144-bba0-4636-9258-4ce3ad100185))
+    (model "${KIPRJMOD}/3D Models/EN11-HSM1BF20--3DModel-STEP-412949.STEP"
+      (offset (xyz 0 0 -2))
+      (scale (xyz 1 1 1))
+      (rotate (xyz -90 0 0))
+    )
   )
 
   (footprint "CJ4-Autopilot:SW_PUSH_6mm" (layer "F.Cu")
@@ -1207,6 +1227,11 @@
     (fp_arc (start -1.524 6.095999) (mid -0.032056 -6.28353) (end 1.586121 6.080132) (layer "F.CrtYd") (width 0.05) (tstamp a2063ead-0b27-491d-9d9a-df5dd237da3f))
     (pad "" np_thru_hole oval (at 0 6 90) (size 1 2.2) (drill oval 0.9 2.1) (layers *.Mask) (tstamp 5b3751fc-b2ac-4244-a3d4-10dc18be0cb7))
     (pad "" np_thru_hole circle (at 0 0) (size 7.5 7.5) (drill 7.5) (layers *.Mask) (tstamp dc5ce438-5cbc-4097-bc6b-4439500ed8c1))
+    (model "${KIPRJMOD}/3D Models/EN11-HSM1BF20--3DModel-STEP-412949.STEP"
+      (offset (xyz 0 0 -2))
+      (scale (xyz 1 1 1))
+      (rotate (xyz -90 0 0))
+    )
   )
 
   (footprint "CJ4-Autopilot:SW_PUSH_6mm" (layer "F.Cu")

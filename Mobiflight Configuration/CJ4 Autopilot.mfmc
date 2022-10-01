@@ -9,7 +9,7 @@
   <Button Name="CRS2_BTN" Pin="9" />
   <Encoder Name="ALT_ENC" PinLeft="14" PinRight="13" EncoderType="1" />
   <Button Name="ALT_BTN" Pin="12" />
-  <Encoder Name="HDG_ENC" PinLeft="17" PinRight="16" EncoderType="1" />
+  <Encoder Name="HDG_ENC" PinLeft="16" PinRight="17" EncoderType="1" />
   <Button Name="HDG_BTN" Pin="15" />
   <Encoder Name="FLC_ENC" PinLeft="20" PinRight="19" EncoderType="1" />
   <Button Name="FLC_BTN" Pin="18" />
